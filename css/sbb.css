@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  max-width: 1320px; }
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  z-index: 99999; }
+  header .container {
+    border-bottom: 1px solid #c4c9d2;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+main {
+  padding-top: 100px; }
+  main .container {
+    max-width: 800px; }
+  main p {
+    font-size: 14px; }
+  main h2 {
+    font-weight: 700;
+    color: #e9502a; }
+  main .ale {
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #74c14d;
+    background: rgba(129, 193, 77, 0.15);
+    line-height: 22px !important; }
+  main .form-select {
+    margin-top: 5px;
+    border: solid 1px #818181 !important;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px !important;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  main .form-control {
+    margin-top: 5px;
+    border: solid 1px #818181 !important;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    height: 48px;
+    padding-left: 20px; }
+    main .form-control:focus {
+      box-shadow: none; }
+  main .btn {
+    background-color: #e9502a;
+    border: 1px solid #e9502a;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 15px 22px;
+    line-height: 17px;
+    box-shadow: none;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s; }
+    main .btn:hover {
+      background-color: #fff;
+      border: 1px solid #e9502a;
+      color: #e9502a; }
+    @media (max-width: 767px) {
+      main .btn {
+        width: 100%; } }
+
+.service {
+  padding-top: 100px; }
+  .service .container {
+    max-width: 995px; }
+
+footer {
+  margin-top: 100px;
+  background: #5F6A84;
+  padding-top: 60px; }
+  footer .lose {
+    padding-bottom: 20px; }
+    footer .lose ul li {
+      color: white;
+      font-size: 15px; }
+      footer .lose ul li img, footer .lose ul li svg {
+        filter: brightness(0) invert(1); }
+      @media (max-width: 991px) {
+        footer .lose ul li {
+          display: none; } }
+      footer .lose ul li.active {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 600; }
+        @media (max-width: 991px) {
+          footer .lose ul li.active {
+            display: flex;
+            margin-bottom: 0; } }
+        footer .lose ul li.active img {
+          display: none; }
+          @media (max-width: 991px) {
+            footer .lose ul li.active img {
+              display: block; } }
+  footer .live {
+    border-top: 1px solid white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media (max-width: 991px) {
+      footer .live {
+        padding: 15px 15px; } }
+    footer .live h6 {
+      font-size: 13px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 0; }
+      @media (max-width: 400px) {
+        footer .live h6 {
+          font-size: 11px; } }
+    footer .live ul {
+      color: white;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 0; }
+      footer .live ul li {
+        font-size: 13px;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+
+/*# sourceMappingURL=sbb.css.map */

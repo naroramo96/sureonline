@@ -1,0 +1,231 @@
+@import "all_mixing/media/screen";
+@import "all_mixing/font/font_family";
+@import "all_mixing/color/colors";
+
+body{
+  padding:0;
+  margin:0;
+  @include Montserrat;
+}
+
+.container{
+  max-width: 1320px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  z-index: 99999;
+  .container{
+    border-bottom: 1px solid #c4c9d2;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+main{
+  padding-top: 100px;
+  .container{
+    max-width: 800px;
+  }
+  p{
+    font-size:14px;
+  }
+  h2{
+    font-weight: 700;
+    color: #e9502a ;
+  }
+  .ale{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px 15px;
+    border: 1px solid #74c14d ;
+    background: rgba(129, 193, 77, 0.15);
+    line-height: 22px !important;
+  }
+  .form-select{
+    margin-top: 5px;
+    border: solid 1px #818181 !important;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px !important;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:focus{
+      box-shadow: none;
+      border: solid 1px #818181 !important;
+    }
+  }
+  .form-control{
+    margin-top: 5px;
+    border: solid 1px #818181 !important;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    height: 48px;
+    padding-left: 20px;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  .btn{
+    background-color: #e9502a ;
+    border: 1px solid #e9502a ;
+    color: #fff ;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 15px 22px ;
+    line-height: 17px;
+    box-shadow: none ;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s;
+    &:hover{
+     background-color: #fff ;
+     border: 1px solid #e9502a ;
+     color: #e9502a;
+    }
+    @include breakpoints(mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.service{
+  padding-top: 100px;
+  .container{
+    max-width: 995px;
+  }
+}
+
+footer{
+  margin-top: 100px;
+  background: #5F6A84;
+  padding-top: 60px;
+  .lose{
+    padding-bottom: 20px;
+    ul{
+      li{
+        color: white;
+        font-size: 15px;
+        img,svg{
+          filter: brightness(0) invert(1);
+        }
+        @include breakpoints(medium) {
+          display: none;
+        }
+        &.active{
+          font-size:16px;
+          margin-bottom:10px;
+          font-weight: 600;
+          @include breakpoints(medium) {
+            display: flex;
+            margin-bottom:0;
+          }
+          img{
+            display: none;
+            @include breakpoints(medium) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .live{
+    border-top: 1px solid white;
+    padding:15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoints(medium) {
+      padding:15px 15px;
+    }
+    h6{
+      font-size: 13px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 0;
+      @include breakpoints(xs) {
+        font-size: 11px;
+      }
+    }
+    ul{
+      color: white;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 0;
+      li{
+        font-size: 13px;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.modal{ 
+  position: fixed !important;
+  .modal-body{
+    .lola{
+      position: relative;
+      max-width: 200px;
+      width: 100%;
+      margin:0 auto;
+      .loader{
+        content: "";
+        display: block;
+        width: 10px;
+        background: rgba(255, 255, 255, .8);
+        height: 100%;
+        position: absolute;
+        box-shadow: 0 0 12px 6px #fffc;
+        top: 0;
+        left: 0;
+        animation: 2s move-182cedbb infinite 
+        linear;
+        @keyframes move-182cedbb {
+          0% {
+              left: -5%
+          }
+
+          to {
+              left: 105%
+          }
+        }
+      }
+    }
+    ul{
+      margin-top: 40px;
+      padding-bottom: 20px;
+      li{
+        font-size:12px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        color: #0009;
+        padding-right: 10px;
+        padding-left: 10px;
+        &.active{
+          border-right:1px solid #000;
+        }
+        img{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

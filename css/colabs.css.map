@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKQ,yTAAiT;ACDzT,IAAI;EACF,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC",
+"sources": ["all_mixing/font/font_family.scss","colabs.scss"],
+"names": [],
+"file": "colabs.css"
+}
